@@ -1,10 +1,10 @@
-# VulnHunter - Advanced Web Application Security Scanner
+# OXAS - Advanced Web Application Security Scanner
 
-VulnHunter is a powerful, modular Python CLI tool designed for automated web application security reconnaissance and vulnerability scanning. It performs a comprehensive analysis of a target URL, starting with deep reconnaissance and proceeding to vulnerability testing based on intelligent WAF detection.
+OXAS is a powerful, modular Python CLI tool designed for automated web application security reconnaissance and vulnerability scanning. It performs a comprehensive analysis of a target URL, starting with deep reconnaissance and proceeding to vulnerability testing based on intelligent WAF detection.
 
 ## Features
 
-VulnHunter is built with a modular architecture, allowing for easy extension and maintenance.
+OXAS is built with a modular architecture, allowing for easy extension and maintenance.
 
 ### 🔍 Reconnaissance Modules
 These modules gather critical information about the target before any aggressive testing begins:
@@ -18,7 +18,7 @@ These modules gather critical information about the target before any aggressive
 - **Cloud Storage**: Checks for exposed cloud storage buckets (AWS, GCP, Azure) related to the target.
 
 ### 🛡️ Vulnerability Testing Modules
-If no WAF is detected (or if the user explicitly approves), VulnHunter proceeds with active vulnerability testing:
+If no WAF is detected (or if the user explicitly approves), OXAS proceeds with active vulnerability testing:
 - **SQL Injection**: Tests input fields and URLs for SQL injection vulnerabilities.
 - **NoSQL Injection**: Tests for NoSQL injection vulnerabilities.
 - **XSS**: Cross-Site Scripting detection (Reflected/Stored).
@@ -59,8 +59,8 @@ The codebase is organized as follows:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/vulnhunter.git
-   cd vulnhunter
+   git clone https://github.com/yourusername/OXAS.git
+   cd OXAS
    ```
 
 2. **Set up a virtual environment:**
@@ -81,7 +81,7 @@ The codebase is organized as follows:
 
 ## Configuration
 
-VulnHunter is highly configurable via `config.yaml`. Key settings include:
+OXAS is highly configurable via `config.yaml`. Key settings include:
 
 - **Target**:
   - `timeout`: Request timeout in seconds.
@@ -122,5 +122,5 @@ python cli.py https://example.com
 
 ## Disclaimer
 
-**VulnHunter is for educational purposes and authorized security testing only.**
+**OXAS is for educational purposes and authorized security testing only.**
 Using this tool against systems you do not own or do not have explicit permission to test is illegal. The authors are not responsible for any misuse or damage caused by this tool.
