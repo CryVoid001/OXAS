@@ -1,0 +1,36 @@
+target:
+  url: ""
+  timeout: 10
+  threads: 50
+
+wordlists:
+
+  directories: "wordlists/directories.txt"
+  users: "wordlists/users.txt"
+  passwords: "wordlists/passwords.txt"
+  sqli_payloads: "wordlists/sqli_payloads.txt"
+  xss_payloads: "wordlists/xss_payloads.txt"
+  open_redirect_payloads: "wordlists/open_redirect_payloads.txt"
+  xxe_payloads: "wordlists/xxe_payloads.txt"
+  ssrf_payloads: "wordlists/ssrf_payloads.txt"
+  crlf_payloads: "wordlists/crlf_payloads.txt"
+
+crawler:
+  depth: 5
+  max_urls: 100
+
+
+env:
+  apiKey : "hoUJi9OEbO8kVm9FyRT7SQ==AYrzU1F6tPcUwMdS"
+
+dirb_scanner:
+  threads: 50
+  timeout: 5
+  max_depth: 10
+
+brute_force:
+  concurrency: 10
+
+cookies:
+  - "PHPSESSID=ebl2ftis6sc57vscc6ua9g4qa0"
+  - "security=low"
